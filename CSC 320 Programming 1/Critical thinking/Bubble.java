@@ -26,23 +26,3 @@ public class Bubble{
   
     }
 }
-
-
-/*import java.util.ArrayList;
- * ArrayList<Interger> numbers = new ArrayList<Interger>();
- *       numbers.add(num);
-        System.out.println("Done? Enter 'e'" );
-        exit = in.nextLine();
-        int len = numbers.size();
-        } while(exit != "e");
-
-        for(int i = 0; i < len; ++i){
-            for(int j = i+1; j < len; ++j){
-                if (numbers.get(i) > numbers.get(j)){
-                int temp = numbers.get(i);
-                numbers.get(i) = numbers.get(j);
-                numbers.get(j) = temp;
-                }
-            }
-        }
- */
