@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Road Sign Quiz</string>
-    <string name="button1">School Zone</string>
-    <string name="button2">Crossing</string>
-    <string name="button3">Bike Lane</string>
-    <string name="button4">No Horses</string>
-    <string name="welcome">Name This Sign</string>
-    <string name="answerText">Correct</string>
-    <drawable name="roadSign">@drawable/road_sign</drawable>
+    <string name="app_name">Mortgage Calculator</string>
+    <string name="duration_year">Duration (year)</string>
+    <string name="total_payment_0_00">Total Payment: $0.00</string>
+    <string name="calculate">Calculate</string>
+    <string name="ok">Ok</string>
+    <string name="enter_interest_rate">Enter interest rate</string>
+    <string name="enter_down_payment_amount">Enter down payment amount</string>
+    <string name="enter_purchase_price">Enter purchase price</string>
 </resources>

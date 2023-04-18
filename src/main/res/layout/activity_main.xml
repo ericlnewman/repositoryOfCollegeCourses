@@ -1,134 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.androidsignquiz.MainActivity"
-    android:paddingLeft="64dp"
-    android:paddingRight="64dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp">
+    tools:context="com.example.mortgagecalculatorapp.MainActivity"
+    style="@style/Grid">
 
-    <FrameLayout
-        android:id="@+id/layout"
-        android:layout_width="match_parent"
-        android:layout_height="50dp" />
-
-    <TextView
-        android:id="@+id/introText"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/editTextPurchasePrice"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/layout" />
-
-    <ImageView
-        android:id="@+id/bike"
-        android:layout_width="119dp"
-        android:layout_height="86dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/introText"
-        android:src="@drawable/bike_lane"
-        android:textAlignment="textStart"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:visibility="gone"
-        />
-
-    <ImageView
-        android:id="@+id/yield"
-        android:layout_width="119dp"
-        android:layout_height="86dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/bike"
-        android:src="@drawable/yield_to_pedestrians"
-        android:textAlignment="textStart"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:visibility="gone"
-        />
-
-    <ImageView
-        android:id="@+id/school"
-        android:layout_width="119dp"
-        android:layout_height="86dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/yield"
-        android:src="@drawable/end_school_speed_limit"
-        android:textAlignment="textStart"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:visibility="gone"
-        />
-
-    <ImageView
-        android:id="@+id/horses"
-        android:layout_width="119dp"
-        android:layout_height="86dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/school"
-        android:textAlignment="textStart"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:visibility="gone"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:digits="0123456789"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="25"
         />
 
     <TextView
-        android:id="@+id/answerText"
-        android:layout_width="match_parent"
+        android:id="@+id/textViewPurchasePrice"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/colorPrimaryDark" />
-
-    <Button
-        android:id="@+id/button1"
-        style="@style/Widget.AppCompat.Button"
-        android:text="@string/button1"
-        android:layout_width="90dp"
-        android:layout_height="65dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:elevation="4dp"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_alignParentBottom="true"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="@dimen/row_margin_bottom"
+        android:background="@color/amount_background"
+        android:elevation="2dp"
+        android:padding="@dimen/textview_padding"
+        android:hint="@string/enter_purchase_price"
         />
 
-    <Button
-        android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="90dp"
-        android:layout_height="65dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="143dp"
-        android:elevation="4dp"
-        android:text="@string/button2"
-        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/editTextDownPaymentAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:digits="0123456789"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="45"
+        />
+
+    <TextView
+        android:id="@+id/textViewDownPaymentAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="@dimen/row_margin_bottom"
+        android:background="@color/amount_background"
+        android:elevation="2dp"
+        android:padding="@dimen/textview_padding"
+        android:hint="@string/enter_down_payment_amount"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextInterestRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:digits="0123456789"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="30"
+        />
+
+    <TextView
+        android:id="@+id/textViewInterestRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="@dimen/row_margin_bottom"
+        android:background="@color/amount_background"
+        android:elevation="2dp"
+        android:padding="@dimen/textview_padding"
+        android:hint="@string/enter_interest_rate"
+        />
+
+    <TextView
+        android:id="@+id/ten_to_thirty_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="@dimen/row_margin_bottom"
+        android:background="@color/amount_background"
+        android:elevation="2dp"
+        android:padding="@dimen/textview_padding"
+        android:text="Total Payments for 10, 20 and 30: "
+        />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:text="@string/duration_year"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/textViewDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/monthly_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="@dimen/row_margin_bottom"
+        android:background="@color/amount_background"
+        android:elevation="2dp"
+        android:padding="@dimen/textview_padding"
+        android:text="@string/total_payment_0_00"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:max="30"
+        android:progress="1" />
 
     <Button
-        android:id="@+id/button3"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="90dp"
-        android:layout_height="65dp"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_marginBottom="100dp"
-        android:elevation="4dp"
-        android:text="@string/button3"
-        android:textColor="@color/colorPrimaryDark" />
-
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="10"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:text="@string/calculate" />
     <Button
-        android:id="@+id/button4"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="90dp"
-        android:layout_height="65dp"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_marginBottom="208dp"
-        android:elevation="4dp"
-        android:text="@string/button4"
-        android:textColor="@color/colorPrimaryDark" />
-</RelativeLayout>
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:text="@string/ok" />
+
+</GridLayout>
