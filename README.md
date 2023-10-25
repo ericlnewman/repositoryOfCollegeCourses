@@ -6,7 +6,7 @@ This is a compilation of the source code for coursework assignments taken at Col
 I earned the basics of programming, structured problem solving methods, algorithms, structured programming, and object-oriented programming (OOP)
 
 ## CSC 372 - Programming II | 
-I earned sthe fundamentals of OOP concepts including data abstraction, inheritance and polymorphism, as well as creating graphical interfaces with Java.
+I learned the fundamentals of OOP concepts including data abstraction, inheritance and polymorphism, as well as creating graphical interfaces with Java.
 
 ## CSC 400 - Data Structures and Algorithms | 
 I learned several fundamental algorithms and data structures, and learn to implement them in Java. Some of the data structures include bags, linked lists, stacks, queues. Analyzed algorithms for searching, manipulating priority queues, sorting.
